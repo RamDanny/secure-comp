@@ -1,0 +1,5 @@
+The EIG (Exponential Information Gathering Algorithm) is used for Byzantine Agreement
+
+For the number of parties 'n', corruptions 't' in the network
+
+n > 3t must hold for the algorithm
