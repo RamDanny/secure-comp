@@ -1,4 +1,4 @@
-#Secure Computation
+# Secure Computation
 
 A simulation of algorithms used in Reliable Broadcast (RB) and Byzantine Agreement (BA) problems
 
