@@ -1,0 +1,25 @@
+The Phase-King algorithm is used to solve the Byzantine Agreement (BA) problem
+
+The algorithm works for number of parties 'n', number of corruptions 't'
+
+where n > 4t
+
+The algorithm has t+1 phases, each with 2 rounds
+
+Each party initializes their preferred output 'pref_i' to be input bit 'b_i'
+
+In the kth phase,
+
+  A 'king' is chosen for the phase
+  
+  In round 1 of the phase, every party sends its pref_i to everyone
+  
+  Of the received pref bits, the majority is assigned to 'v_i' (or default/null value in case of no majority)
+  
+  In round 2 of the phase, the current 'king' sends its own pref bit to everyone
+
+  If for each party, v_i was received more than t + n/2 times, pref_i is set as v_i
+
+  Else, pref_i is set to the king's pref bit
+
+At the end of t+1 phases, all parties output their pref bit
