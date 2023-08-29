@@ -4,7 +4,7 @@ def main():
     print('Phase-King Protocol\nn > 4t')
     n, t = map(int, input('Num of parties, Corruptions : ').split())
     if n <= 4 * t:
-        print('Enter n > 3t')
+        print('Enter n > 4t')
         return
     parties = [i+1 for i in range(n)]
     corrupt = list(map(int, input('Enter corrupt parties: ').split()))
